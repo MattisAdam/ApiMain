@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mattis.Api.Main.Db\Mattis.Api.Main.Db.csproj" />
+    <ProjectReference Include="..\Mattis.Api.Main.Dto\Mattis.Api.Main.Dto.csproj" />
+    <ProjectReference Include="..\Mattis.Api.Main.Model\Mattis.Api.Main.Model.csproj" />
+  </ItemGroup>
+
+</Project>
