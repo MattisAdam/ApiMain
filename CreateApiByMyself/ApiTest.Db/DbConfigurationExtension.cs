@@ -10,7 +10,7 @@ namespace ApiTest.Db
     {
         public static void AddApiTestDbContext(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<PersonDbContext>(options =>
+            services.AddDbContext<ApiTestDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("ApiTestDb"),
             o =>
             {

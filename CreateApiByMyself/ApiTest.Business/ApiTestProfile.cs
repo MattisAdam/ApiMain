@@ -1,16 +1,15 @@
 ﻿using ApiTest.Dto;
 using ApiTest.Model;
 using AutoMapper;
-using MediatR;
-namespace ApiTest.Business.Person
+namespace ApiTest.Business
 {
-   public class PersonProfile : Profile
+   public class ApiTestProfile : Profile
     {
-        public PersonProfile()
+        public ApiTestProfile()
         {
             CreateMap<PersonDao, PersonResponse>();
             CreateMap<PersonInput, PersonDao>();
 
         }
     }
-}
+}   

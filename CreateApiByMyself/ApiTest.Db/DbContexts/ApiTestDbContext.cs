@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiTest.Db.DbContexts
 {
-    public class PersonDbContext : BaseDbContext, IPersonDbContext
+    public class ApiTestDbContext : BaseDbContext, IApiTestDbContext
     {
-        public PersonDbContext(DbContextOptions<PersonDbContext> options) : base(options)
+        public ApiTestDbContext(DbContextOptions<ApiTestDbContext> options) : base(options)
         { 
         }
 

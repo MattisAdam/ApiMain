@@ -4,9 +4,9 @@ using ApiTest.Model;
 
 namespace ApiTest.Db.Repository.Implementation
 {
-    class PersonRepository : BaseRepository<IPersonDbContext, PersonDao>, IPersonRepository
+    class PersonRepository : BaseRepository<IApiTestDbContext, PersonDao>, IPersonRepository
     {
-        public PersonRepository(IPersonDbContext context) : base(context)
+        public PersonRepository(IApiTestDbContext context) : base(context)
         {
         }
 

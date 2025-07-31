@@ -8,18 +8,19 @@
 
   <ItemGroup>
     <Folder Include="Person\Command\" />
-    <Folder Include="Person\Query\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="15.0.1" />
-    <PackageReference Include="MediatR" Version="13.0.0" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+	  <PackageReference Include="MediatR" Version="13.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.18" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.18" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ApiTest.Db\ApiTest.Db.csproj" />
     <ProjectReference Include="..\ApiTest.Dto\ApiTest.Dto.csproj" />
     <ProjectReference Include="..\ApiTest.Model\ApiTest.Model.csproj" />
   </ItemGroup>

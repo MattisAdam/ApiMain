@@ -5,9 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiTest.Db.Repository.Implementation
 {
-    public interface IPersonRepository : IBaseRepository<IPersonDbContext, PersonDao>
+    public interface IPersonRepository : IBaseRepository<IApiTestDbContext, PersonDao>
     {
         //Task<IEnumerable<PersonDao>> GetByCriteriaAsync();
+        
         /*add parameters after queries*/
     }
 }

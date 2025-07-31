@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiTest.Db.DbContexts
 {
-    public interface IPersonDbContext : IBaseDbContext
+    public interface IApiTestDbContext : IBaseDbContext
     {
         public DbSet<PersonDao> PersonDbSet { get; set; }
     }
